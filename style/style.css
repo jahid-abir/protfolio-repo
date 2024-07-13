@@ -158,3 +158,41 @@ footer input[type="text"] , input[type="email"], textarea{
     border: none;
     margin-bottom: 20px;
 }
+
+/* responsive section */
+.hide{
+    display: none;
+}
+@media screen and (max-width:576px) {
+    .skills ,.resume-master,footer,.info ,nav,.banner{
+        flex-direction: column;
+    }
+    footer , .about{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"] , input[type="email"], textarea{
+        width: calc(100% - 40px);
+    }
+    .header{
+      background-image: none;
+    }
+    .banner-content{
+        margin: auto;
+        width: fit-content;
+    }
+    nav ul li{
+        margin: 10px;
+    }
+    nav{
+        margin: auto;
+    }
+    .banner-title1{
+        font-size: 30px;
+    }
+    .banner-title2{
+        font-size: 40px;
+    }
+}
